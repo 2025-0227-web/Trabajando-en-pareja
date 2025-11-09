@@ -1,0 +1,9 @@
+#Escribir un programa que pida al usuario una palabra y muestre por pantalla el número de veces que contiene cada vocal.
+palabra = input("Introduce una palabra: ").lower()
+vocales = "aeiou"
+contador_vocales = {vocal: 0 for vocal in vocales}
+for letra in palabra:
+    if letra in contador_vocales:
+        contador_vocales[letra] += 1
+for vocal, contador in contador_vocales.items():
+    print(f"La vocal '{vocal}' aparece {contador} veces.")

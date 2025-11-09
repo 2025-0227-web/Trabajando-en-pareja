@@ -1,0 +1,9 @@
+#Escribir un programa que almacene el abecedario en una lista, elimine de la lista las letras que ocupen posiciones múltiplos de 3, y muestre por pantalla la lista resultante.
+abecedario = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+abecedario_modificado = []
+for i in range(len(abecedario)):
+    if i % 3 != 0:
+        abecedario_modificado.append(abecedario[i])
+print("El abecedario modificado es:")
+for letra in abecedario_modificado:
+    print(letra)

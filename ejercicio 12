@@ -1,0 +1,8 @@
+#Escribir un programa que pregunte por una muestra de números, separados por comas, los guarde en una lista y muestre por pantalla su media y desviación típica.
+import statistics
+numeros_input = input("Introduce una muestra de números separados por comas: ")
+numeros = [float(num) for num in numeros_input.split(",")]
+media = statistics.mean(numeros)
+desviacion_tipica = statistics.stdev(numeros)
+print("La media es:", media)
+print("La desviación típica es:", desviacion_tipica)
